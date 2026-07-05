@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="portal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shujat Ali Shah | Professional Portfolio</title>
+  <meta name="description" content="Professional portfolio of Shujat Ali Shah, a Computer Engineering student specializing in Software Engineering, Hardware Designing, AI-ML, and Cyber-security.">
+  
+  <!-- Google Fonts for Each Field -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Orbitron:wght@400;600;800;900&family=Outfit:wght@300;400;500;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=VT323&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Watermark Container -->
+  <div class="background-watermark" id="bg-watermark">
+    <div class="watermark-svg-container" id="watermark-svg-container"></div>
+    <div class="background-grid"></div>
+    <div class="glowing-orb orb-1"></div>
+    <div class="glowing-orb orb-2"></div>
+  </div>
+
+  <div class="portfolio-container">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar glass">
+      <div class="profile-section">
+        <div class="avatar-container">
+          <div class="avatar-glow"></div>
+          <!-- Avatar container referencing profile.png -->
+          <div class="avatar-image">
+            <img src="profile.png" alt="Shujat Ali Shah" class="avatar-img-round">
+          </div>
+        </div>
+        <h1 class="profile-name" id="user-name">Shujat Ali Shah</h1>
+        <p class="profile-subtitle" id="user-title">Computer Engineering Student</p>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu">
+        <button class="nav-item active" data-tab="portal" id="nav-portal">
+          <span class="nav-icon">📊</span>
+          <span class="nav-text">Overview</span>
+        </button>
+        <button class="nav-item" data-tab="software" id="nav-software">
+          <span class="nav-icon">💻</span>
+          <span class="nav-text">Software Engineering</span>
+        </button>
+        <button class="nav-item" data-tab="hardware" id="nav-hardware">
+          <span class="nav-icon">🔌</span>
+          <span class="nav-text">Hardware Designing</span>
+        </button>
+        <button class="nav-item" data-tab="ai-ml" id="nav-ai-ml">
+          <span class="nav-icon">🧠</span>
+          <span class="nav-text">AI-ML</span>
+        </button>
+        <button class="nav-item" data-tab="cybersecurity" id="nav-cybersecurity">
+          <span class="nav-icon">🛡️</span>
+          <span class="nav-text">Cyber-security</span>
+        </button>
+      </nav>
+
+      <!-- Contact Quick Info -->
+      <div class="sidebar-contact">
+        <a href="mailto:shahshujatali072@gmail.com" class="contact-btn glass-button" id="contact-email" title="Email Me">
+          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M20,4H4C2.9,4 2,4.9 2,6V18C2,19.1 2.9,20 4,20H20C21.1,20 22,19.1 22,18V6C22,4.9 21.1,4 20,4M20,8L12,13L4,8V6L12,11L20,6V8Z"/></svg>
+        </a>
+        <a href="tel:+923495193875" class="contact-btn glass-button" id="contact-phone" title="Call Me">
+          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/></svg>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener" class="contact-btn glass-button" id="contact-github" title="GitHub">
+          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.24,6.15 17.24,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-btn glass-button" id="contact-linkedin" title="LinkedIn">
+          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.4 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z"/></svg>
+        </a>
+      </div>
+
+      <!-- Footer Info -->
+      <div class="sidebar-footer">
+        <a href="admin.html" class="admin-link">✏️ Experience Editor</a>
+        <div class="credits">© 2026 Shujat Shah</div>
+      </div>
+    </aside>
+
+    <!-- Mobile Header -->
+    <header class="mobile-header glass">
+      <div class="mobile-profile">
+        <span class="mobile-name">Shujat Ali Shah</span>
+      </div>
+      <button class="hamburger-menu" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <!-- Main Content Panel -->
+    <main class="main-content">
+      
+      <!-- HEADER METRICS / FIELD DETAILS -->
+      <section class="field-header-section glass">
+        <div class="field-info-row">
+          <div class="field-info">
+            <span class="field-badge" id="active-field-badge">System Portal</span>
+            <h2 class="field-title" id="active-field-title">Overview Dashboard</h2>
+            <p class="field-tagline" id="active-field-tagline">Multi-disciplinary tech enthusiast blending software development, hardware designing, intelligent systems, and security.</p>
+          </div>
+          <!-- Edit button that dynamically links based on page context -->
+          <div class="field-actions" id="header-action-container">
+            <button onclick="editCurrentView()" class="glass-button edit-action-btn">✏️ Edit Profile Info</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- DYNAMIC CONTENT SECTIONS -->
+      <div class="content-body">
+        
+        <!-- ================= OVERVIEW PORTAL VIEW ================= -->
+        <div class="tab-view active" id="view-portal">
+          
+          <!-- Large Portrait Front Hero Section -->
+          <div class="portal-hero glass">
+            <div class="hero-image-frame">
+              <img src="profile.png" alt="Shujat Ali Shah" class="hero-profile-pic">
+              <div class="hero-image-glow"></div>
+            </div>
+            <div class="hero-details">
+              <h2 class="hero-name">Shujat Ali Shah</h2>
+              <div class="hero-badge">Computer Engineering Student</div>
+              <p class="hero-summary" id="portal-summary"></p>
+              <div class="hero-contact-row">
+                <a href="mailto:shahshujatali072@gmail.com" class="glass-button">✉️ Send Message</a>
+                <a href="admin.html#panel-profile" class="glass-button" style="border-color: var(--accent);">✏️ Edit Profile Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Expertise Grid -->
+          <h3 class="portal-section-title mt-4">Areas of Expertise</h3>
+          <div class="portal-grid">
+            <!-- Software Card -->
+            <div class="portal-card glass hover-card-ai" onclick="switchTab('software')">
+              <div class="card-icon">💻</div>
+              <h3>Software Engineering</h3>
+              <p>Developing backend integrations, automation scripts, SQL configurations, and responsive web architectures.</p>
+              <span class="card-explore-btn">Explore Software →</span>
+            </div>
+
+            <!-- Hardware Card -->
+            <div class="portal-card glass hover-card-embedded" onclick="switchTab('hardware')">
+              <div class="card-icon">🔌</div>
+              <h3>Hardware Designing</h3>
+              <p>Circuit diagram planning, logic simulators (Proteus), microcontrollers programming, and hardware-level systems.</p>
+              <span class="card-explore-btn">Explore Hardware →</span>
+            </div>
+
+            <!-- AI-ML Card -->
+            <div class="portal-card glass hover-card-cyber" onclick="switchTab('ai-ml')">
+              <div class="card-icon">🧠</div>
+              <h3>AI-ML</h3>
+              <p>Decision-tree chatbots, classification modeling (KNN, Naive Bayes), OpenCV optical tracking, and data analysis.</p>
+              <span class="card-explore-btn">Explore AI-ML →</span>
+            </div>
+
+            <!-- Cybersecurity Card -->
+            <div class="portal-card glass hover-card-sales" onclick="switchTab('cybersecurity')">
+              <div class="card-icon">🛡️</div>
+              <h3>Cyber-security</h3>
+              <p>Threat vectors classification, risk assessment pipelines, secure architecture practices, and network security.</p>
+              <span class="card-explore-btn">Explore Security →</span>
+            </div>
+          </div>
+
+          <!-- Split Row: Other Work Experience & Education -->
+          <div class="two-column-layout mt-4">
+            
+            <!-- Other Work Experience Section -->
+            <div class="main-column">
+              <div class="card glass section-card height-100">
+                <div class="section-title-row">
+                  <h3 class="section-heading">Other Work Experience</h3>
+                  <a href="admin.html#panel-experiences" class="glass-button btn-small edit-icon-btn" title="Edit Other Experiences">✏️</a>
+                </div>
+                <div class="timeline" id="portal-other-experience">
+                  <!-- Injected via JavaScript (Markhor BPO) -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Global Education Section -->
+            <div class="sidebar-column">
+              <div class="card glass section-card height-100">
+                <div class="section-title-row">
+                  <h3 class="section-heading">Education</h3>
+                  <a href="admin.html#panel-experiences" class="glass-button btn-small edit-icon-btn" title="Edit Education details">✏️</a>
+                </div>
+                <div class="education-timeline" id="portal-education">
+                  <!-- Injected via JavaScript -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ================= DYNAMIC FIELD DETAILS VIEW ================= -->
+        <div class="tab-view" id="view-field">
+          
+          <div class="two-column-layout">
+            <!-- Left Side: Experience & Projects -->
+            <div class="main-column">
+              
+              <!-- Focus Card -->
+              <div class="card glass mb-4 section-card">
+                <div class="section-title-row">
+                  <h3 class="section-heading">Focus Area</h3>
+                  <!-- Option edit button that goes specifically to update section details -->
+                  <a id="btn-edit-focus" href="admin.html#panel-profile" class="glass-button btn-small" style="font-size:0.75rem;">✏️ Edit Focus</a>
+                </div>
+                <p id="field-summary-description"></p>
+              </div>
+
+              <!-- Experiences Section -->
+              <div class="card glass mb-4 section-card">
+                <div class="section-title-row">
+                  <h3 class="section-heading">Experience</h3>
+                  <a id="btn-edit-exp" href="admin.html#panel-experiences" class="glass-button btn-small" style="font-size:0.75rem;">✏️ Edit Experiences</a>
+                </div>
+                <div class="timeline" id="field-experience-timeline">
+                  <!-- Injected via JavaScript -->
+                </div>
+              </div>
+
+              <!-- Projects Section -->
+              <div class="card glass mb-4 section-card">
+                <div class="section-title-row">
+                  <h3 class="section-heading">Featured Projects</h3>
+                  <a id="btn-edit-proj" href="admin.html#panel-projects" class="glass-button btn-small" style="font-size:0.75rem;">✏️ Manage Projects</a>
+                </div>
+                <div class="projects-grid" id="field-projects-grid">
+                  <!-- Injected via JavaScript -->
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right Side: Skills, Certifications, Education -->
+            <div class="sidebar-column">
+              
+              <!-- Skills Card -->
+              <div class="card glass mb-4 section-card">
+                <h3 class="section-heading">Field Skills</h3>
+                <div class="skills-tags" id="field-skills-tags">
+                  <!-- Injected via JavaScript -->
+                </div>
+              </div>
+
+              <!-- Certifications Card -->
+              <div class="card glass mb-4 section-card">
+                <div class="section-title-row">
+                  <h3 class="section-heading">Certifications</h3>
+                  <a id="btn-edit-cert" href="admin.html#panel-certs" class="glass-button btn-small" style="font-size:0.75rem;">✏️ Edit Certs</a>
+                </div>
+                <div class="certifications-list" id="field-certifications-list">
+                  <!-- Injected via JavaScript -->
+                </div>
+              </div>
+
+              <!-- Education Card (Global but tagged) -->
+              <div class="card glass mb-4 section-card">
+                <div class="section-title-row">
+                  <h3 class="section-heading">Education</h3>
+                </div>
+                <div id="field-education-details">
+                  <!-- Injected via JavaScript -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

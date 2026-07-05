@@ -1,0 +1,197 @@
+{
+  "personal": {
+    "name": "Shujat Ali Shah",
+    "title": "Computer Engineering Student",
+    "email": "shahshujatali072@gmail.com",
+    "phone": "+923495193875",
+    "github": "https://github.com",
+    "linkedin": "https://linkedin.com",
+    "summary": "I'm Shujat Ali Shah, a 3rd-year Computer Engineering student passionate about solving real-world problems through technology. I have a strong foundation in programming (C, C++, C#, Python) and web development (HTML, CSS), along with hands-on experience in embedded systems, microcontrollers, and circuit design using tools like Proteus. I am deeply interested in Artificial Intelligence, Machine Learning, and Cybersecurity. Driven by continuous learning, I aim to build innovative, efficient, and secure solutions."
+  },
+  "fields": {
+    "portal": {
+      "id": "portal",
+      "name": "Overview",
+      "font": "Outfit",
+      "color": "#8b5cf6",
+      "secondary": "#ec4899",
+      "tagline": "Multi-disciplinary tech enthusiast blending software development, hardware designing, intelligent systems, and security."
+    },
+    "software": {
+      "id": "software",
+      "name": "Software Engineering",
+      "font": "Outfit",
+      "color": "#8b5cf6",
+      "secondary": "#ec4899",
+      "tagline": "Developing robust backend applications, script automations, and responsive web systems."
+    },
+    "hardware": {
+      "id": "hardware",
+      "name": "Hardware Designing",
+      "font": "JetBrains Mono",
+      "color": "#f97316",
+      "secondary": "#3b82f6",
+      "tagline": "Designing circuit schematics, simulating microcontroller actions, and implementing hardware-software integrations."
+    },
+    "ai-ml": {
+      "id": "ai-ml",
+      "name": "AI-ML",
+      "font": "Orbitron",
+      "color": "#10b981",
+      "secondary": "#06b6d4",
+      "tagline": "Engineering intelligent systems, training predictive models, and building real-time computer vision applications."
+    },
+    "cybersecurity": {
+      "id": "cybersecurity",
+      "name": "Cyber-security",
+      "font": "VT323",
+      "color": "#ef4444",
+      "secondary": "#991b1b",
+      "tagline": "Analyzing threat vectors, assessing risk, and implementing security best practices."
+    }
+  },
+  "experiences": [
+    {
+      "id": "exp-1",
+      "role": "Engineer",
+      "company": "Decodelabs",
+      "location": "Remote / Hybrid",
+      "duration": "May 2026 - Jun 2026",
+      "fields": ["software", "ai-ml"],
+      "description": "Developed 'Kynova,' a rule-based AI chatbot, engineering explicit programmatic decision trees to simulate natural human interaction. Trained and optimized machine learning classification models, including K-Nearest Neighbors (KNN), Naïve Bayes, and Logistic Regression, to evaluate predictive performance. Deployed computer vision and optical character recognition (OCR) solutions utilizing OpenCV and Tesseract for automated image and text data extraction. Built 'Gesture Canvas,' applying real-time computer vision algorithms to track and map hand gestures for interactive applications."
+    },
+    {
+      "id": "exp-2",
+      "role": "Sales Representative",
+      "company": "Markhor BPO",
+      "location": "Full-time",
+      "duration": "Dec 2022 - Jun 2024",
+      "fields": ["other"],
+      "description": "Responsible for driving revenue growth and exceeding sales targets. Leveraged strong communication and negotiation skills to build client relationships, understand their needs, and present tailored solutions. Role involved active listening, persuasive selling, and closing deals to contribute directly to the company's success."
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "title": "Hospital Management System",
+      "duration": "Apr 2025 - Jun 2025",
+      "fields": ["software"],
+      "description": "Developed a comprehensive hospital management system leveraging Python and HTML to streamline patient registration, appointment scheduling, and billing processes. This project enhanced operational efficiency and reduced administrative overhead.",
+      "technologies": ["Python", "HTML", "CSS", "SQLite"]
+    },
+    {
+      "id": "proj-2",
+      "title": "Gesture Canvas",
+      "duration": "May 2026 - Jun 2026",
+      "fields": ["software", "ai-ml"],
+      "description": "A real-time computer vision application that applies advanced tracking algorithms to map and translate hand gestures onto an interactive digital canvas. Created for seamless human-computer interaction.",
+      "technologies": ["Python", "OpenCV", "NumPy"]
+    },
+    {
+      "id": "proj-3",
+      "title": "Kynova AI Chatbot",
+      "duration": "May 2026 - Jun 2026",
+      "fields": ["software", "ai-ml"],
+      "description": "Designed a conversational AI utilizing rule-based state trees and decision graphs to simulate natural, context-aware dialogues. Optimized with machine learning classification backends.",
+      "technologies": ["Python", "KNN", "Naive Bayes", "Scikit-Learn"]
+    },
+    {
+      "id": "proj-4",
+      "title": "Smart Traffic Automation",
+      "duration": "Dec 2025 - Jan 2026",
+      "fields": ["hardware"],
+      "description": "Designed and simulated a smart traffic control circuit using Proteus. Programmed microcontrollers in C++ to optimize traffic light schedules based on mock sensor inputs, minimizing congestion.",
+      "technologies": ["Proteus", "C++", "Microcontrollers", "Circuit Design"]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-1",
+      "degree": "B.Sc. in Computer Engineering",
+      "institution": "International Islamic University, Islamabad, Pakistan",
+      "duration": "2023 - 2027",
+      "grade": "CGPA: 3 / 4 (75%)",
+      "fields": ["software", "hardware", "ai-ml", "cybersecurity"],
+      "description": "Coursework provides a strong foundation in computer science principles, software development, and engineering practices. Actively engaged in academic projects and core laboratories focusing on hardware description languages, computer systems architecture, and software development."
+    }
+  ],
+  "certifications": [
+    {
+      "id": "cert-1",
+      "title": "Google Cybersecurity Foundations Certificate",
+      "provider": "Google / Coursera",
+      "date": "2025",
+      "fields": ["cybersecurity"],
+      "description": "Gained critical knowledge in threat analysis, risk assessment, network security protocols, incident response, and security best practices."
+    },
+    {
+      "id": "cert-2",
+      "title": "Crash Course on Python",
+      "provider": "Coursera",
+      "date": "October 6, 2024",
+      "fields": ["software", "ai-ml"],
+      "description": "Demonstrated foundational programming, script automation, and algorithmic problem-solving skills."
+    },
+    {
+      "id": "cert-3",
+      "title": "Using Python to Interact with the Operating System",
+      "provider": "Coursera",
+      "date": "November 14, 2025",
+      "fields": ["software", "hardware"],
+      "description": "Proficiency in operating system automation, file management, subprocessing, and scripting process executions."
+    },
+    {
+      "id": "cert-4",
+      "title": "Configuration Management and the Cloud",
+      "provider": "Coursera",
+      "date": "2025",
+      "fields": ["software"],
+      "description": "Validation of skills in cloud infrastructure management, automation scripts, and provisioning tools."
+    },
+    {
+      "id": "cert-5",
+      "title": "Introduction to Git and GitHub",
+      "provider": "Coursera",
+      "date": "December 25, 2025",
+      "fields": ["software"],
+      "description": "Credentialed in source control management, team collaboration, branch merges, and pull-request workflows."
+    }
+  ],
+  "skills": {
+    "software": [
+      "Software Architecture",
+      "Web Development (HTML/CSS)",
+      "Object-Oriented Programming",
+      "C, C++, C# Development",
+      "Python Scripting",
+      "Git & GitHub Version Control",
+      "Operating System Automation"
+    ],
+    "hardware": [
+      "Circuit Design (Proteus)",
+      "Microcontroller Programming",
+      "Embedded Systems Integration",
+      "Hardware-Software Interface",
+      "Digital Logic Simulation",
+      "C & C++ Programming"
+    ],
+    "ai-ml": [
+      "Machine Learning",
+      "Pattern Recognition",
+      "Computer Vision",
+      "OpenCV Library",
+      "OCR (Tesseract)",
+      "KNN, Naive Bayes, Logistic Regression",
+      "Image Analysis",
+      "Rule-Based AI Architectures"
+    ],
+    "cybersecurity": [
+      "Threat Analysis",
+      "Risk Assessment",
+      "Security Protocols",
+      "Network Defense",
+      "Cryptography Basics",
+      "Security Best Practices"
+    ]
+  }
+}
